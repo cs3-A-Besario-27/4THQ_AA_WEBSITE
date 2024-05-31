@@ -1,0 +1,154 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-image: url("Screenshot\ 2024-05-16\ 121412.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.container {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    transition: box-shadow 0.3s ease, background 0.3s ease; 
+}
+
+.container:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7); 
+    background: rgba(0, 0, 0, 0.8); 
+}
+
+header {
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 0 0 15px 0;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input-field .input {
+    height: 35px;
+    width: 290px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.2s ease-in-out;
+    font-family: 'Inter', sans-serif; 
+}
+
+.input-field .input:focus {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.7);
+    transform: scale(1.05);
+}
+
+.input-field i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+.toggle-password:hover {
+    color: antiquewhite;
+}
+
+::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.submit {
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    height: 45px;
+    outline: none;
+    width: 100%;
+    background: black; 
+    color: white; 
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s, color 0.2s; 
+}
+
+.submit:hover {
+    background: #002d5a; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+    color: white; 
+}
+
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: small;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.left {
+    display: flex;
+}
+
+label a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.toggle-password {
+    position: relative;
+    color: #fff;
+    font-size: 12px; /* Adjust the font size as desired */
+    text-align: center;
+    cursor: pointer;
+    margin-top: 5px; /* Adjust spacing as desired */
+}
+
+.bx-hide {
+    color: #666;
+}
+
+.bx-show {
+    color: #666;
+}
+
+
+.input-field .remember-me {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.input-field .remember-me input {
+    margin-right: 10px;
+}

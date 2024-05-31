@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Visions - Home</title>
+    <link rel="stylesheet" href="firstpage.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
+
+</head>
+<body>
+    <div class="firstpage" id="home">
+        <div class="container">
+           <div class="slide">
+              <div class="item" style="background-image: url('img2.png');">
+                 <div class="content">
+                    <div class="name">Beyond the Horizon: Discover the Universe's Mysteries</div>
+                    <div class="des">Marvel at NGC 346, a place where stars are born in colorful nebulae, creating a celestial masterpiece.</div>
+                 </div>
+              </div>
+              <div class="item" style="background-image: url('img1.png');">
+                 <div class="content">
+                    <div class="name">Journey to the Stars: Unveil Celestial Wonders</div>
+                    <div class="des">Explore the colorful beauty of the Carina Nebula, a stunning sight in space with mysteries waiting to be uncovered.</div>
+                 </div>
+              </div>
+              <div class="item" style="background-image: url('img3.png');">
+                 <div class="content">
+                    <div class="name"> Delve Deeper into Astronomy!</div>
+                    <div class="des">Discover the amazing Eagle Nebula, where stars are born and swirling clouds create a breathtaking scene.</div>
+                 </div>
+              </div>
+              <div class="item" style="background-image: url(img4.png);">
+                 <div class="content">
+                    <div class="name">Learn More About Space!</div>
+                    <div class="des">Unlock the secrets of Pandora's Cluster, a dazzling display of galaxies colliding billions of light-years away.</div>
+                 </div>
+              </div>
+              <div class="item" style="background-image: url(img5.png);">
+                 <div class="content">
+                    <div class="name">Discover the beauty behind Astronomy</div>
+                    <div class="des">Journey to the Tarantula Nebula, a stunning cosmic jewel filled with bright stars and swirling clouds.</div>
+                 </div>
+              </div>
+              <div class="item" style="background-image: url(img6.png);">
+                 <div class="content">
+                    <div class="name">Earth and Beyond: Exploring the Wonders of Space</div>
+                    <div class="des">Explore the wonders of space with Cosmic Visions! Discover galaxies, stars, and more through captivating images and engaging information.</div>
+                 </div>
+              </div>
+           </div>
+           <div class="button">
+              <button class="prev"><span>&#10229;</span></button>
+              <button class="next"><span>&#8594;</span></button>
+           </div>
+        </div>
+     </div>
+    <script>
+             
+      let next = document.querySelector('.next')
+            let prev = document.querySelector('.prev')
+      
+            next.addEventListener('click', function(){
+            let items = document.querySelectorAll('.item')
+            document.querySelector('.slide').appendChild(items[0])
+        })
+      
+        prev.addEventListener('click', function(){
+          let items = document.querySelectorAll('.item')
+          document.querySelector('.slide').prepend(items[items.length - 1]) // here the length of items = 6
+        })
+    </script>
+
+</body>
+</html>
